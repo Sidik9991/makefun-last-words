@@ -76,7 +76,23 @@ const candidates: Candidate[] = [
 ];
 
 // Pass 2 — three challengers, judged after pass 1.
-const challengers: Candidate[] = [];
+const challengers: Candidate[] = [
+  {
+    text: "I saved everything except the sound of her voice. That was—",
+    scores: { voice: 2, hit: 2, tight: 2, fresh: 2, vivid: 2 },
+    pass: 2,
+  },
+  {
+    text: "I backed up everything. Her laugh wasn't a file. It was—",
+    scores: { voice: 2, hit: 2, tight: 2, fresh: 2, vivid: 2 },
+    pass: 2,
+  },
+  {
+    text: "You left the oven on. I turned it off. I always—",
+    scores: { voice: 2, hit: 2, tight: 2, fresh: 1, vivid: 2 },
+    pass: 2,
+  },
+];
 
 function pick(list: Candidate[]): Candidate {
   let best = list[0];
